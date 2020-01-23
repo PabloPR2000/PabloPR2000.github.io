@@ -7,7 +7,7 @@ body {
   font-family: 'Permanent Marker', cursive;
 
 }
-.header {
+header {
     padding: 20px;
     background-color: #292529;
     color: white;
@@ -21,14 +21,14 @@ body {
   position: fixed;
   bottom: 0px;
 }
-.sidebar {
+aside {
   float: right;
 }
-.topnav {
+nav {
     overflow: hidden;
     background-color: #3D3937;
 }
-.topnav a {
+nav a {
     float: left;
     color: #9B9491;
     display: block;
@@ -36,19 +36,13 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-.topnav a:hover {
+nav a:hover {
     background-color: #4E4845;
     color: #282828;
 }
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 15px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+article {
+  display: flex;
+  justify-content: flex-start;
 }
 @media screen and (max-width:600px) {
   .column {
@@ -67,4 +61,15 @@ img {
   border-radius: 20px 0px 20px 0px;
   text-align: justify;
   margin: 4% 0 4% 0;
+}
+article.nietflex {
+  display: flex;
+  flex-direction: column;
+}
+.pagina {
+  display: flex;
+  justify-content: flex-start;
+}
+aside.ebic {
+  margin-left: 100px;
 }
